@@ -21,14 +21,6 @@
 
     <script>
     
-        // Materialize initialization
-        (function ($) {
-            $(function () {
-                $('.button-collapse').sideNav();
-                $('.carousel.carousel-slider').carousel({fullWidth: true});
-            }); // end of document ready
-        })(jQuery); // end of jQuery namespace
-    
         // Ajax refresh
         function loadDoc(url) {
             xhttp = new XMLHttpRequest();
@@ -40,6 +32,8 @@
             xhttp.open("get", url, true);
             xhttp.send();
         }
+
+        loadDoc('views/home.html');
     
     </script>
 
@@ -65,6 +59,40 @@
     <header></header>
 
     <main id="model"></main>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">home</i></h2>
+                        <h5 class="center">Title</h5>
+                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">present_to_all</i></h2>
+                        <h5 class="center">Title</h5>
+                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">photo</i></h2>
+                        <h5 class="center">Title</h5>
+                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <footer class="page-footer blue">
         <div class="container">
@@ -97,6 +125,18 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    
+
+    <script>
+
+        // Materialize initialization
+        (function ($) {
+            $(function () {
+                $('.button-collapse').sideNav();
+                $('.carousel.carousel-slider').carousel({fullWidth: true});
+            }); // end of document ready
+        })(jQuery); // end of jQuery namespace
+        
+    </script>
+
 </body>
 </html>
